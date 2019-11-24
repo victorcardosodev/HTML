@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>informções colocadas pelo usuario</title>
+    <!-- nesse javascript pegaremos a informação colocada pelo usuario na caixa de texto -->
+    <script language="JavaScript">
+        document.write("Coloque o seu nome, por favor:<p><p>")
+
+        function getname(str) {
+            alert("Olá, " + str + "!");
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="name" onBlur="getname(this.value)" value="">
+    </form>
+    <h4>Agora em qualquer parte fora do bloco de texto</h4>
+</body>
+
+</html>
